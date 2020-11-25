@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+
+  image_resize:
+    container_name: image_resize
+    privileged: true
+    working_dir: /app
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+    env_file:
+      - ./.env
+    ports:
+      - "9000:9000"

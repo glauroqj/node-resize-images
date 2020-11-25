@@ -1,1 +1,2 @@
-# node-resize-images
+# image-resize
+
